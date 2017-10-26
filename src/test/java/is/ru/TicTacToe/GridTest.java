@@ -4,17 +4,28 @@ import org.junit.Test;
 
 public class GridTest{
 
-@Test
-	public void testConstructorForGrid()
+	Grid testGrid = new Grid();
+
+	@Test
+public void testConstructorForGridNumber()
 	{
-		Grid testGrid = new Grid();
+		Grid[] test = testGrid.getGrid();
+
+		for(int i = 0; i < 9; i++){
+			assertEquals(i+1, test[i].getNumber());
+		}
 		
+	}
+
+	@Test
+	public void testConstructorForGridPlayer()
+	{	
 		Grid[] test = testGrid.getGrid();
 
 		for(int i = 0; i < 9; i++){
 			assertEquals(null, test[i].getPlayer());
 		}
-		
+	
 	}
 
 }

@@ -2,8 +2,8 @@ package is.ru.TicTacToe;
 
 public class Players {
 
-	private int numberOfPlayer;	
 	private String nameOfPlayer;
+	private int numberOfPlayer;	
 	private String symbol;
 
 	public Players(int number, String name)
@@ -18,14 +18,14 @@ public class Players {
 		}
 	}
 
-	public int getNumber()
-	{
-		return numberOfPlayer;
-	}
-	
 	public String getName()
 	{
 		return nameOfPlayer;
+	}
+	
+	public int getNumber()
+	{
+		return numberOfPlayer;
 	}
 	
 
