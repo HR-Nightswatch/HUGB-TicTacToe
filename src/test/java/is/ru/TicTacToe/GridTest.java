@@ -1,12 +1,14 @@
-package is.ru.TIC-TAC-TOE;
-import static org.junit.Assert.assertEquals;
+package is.ru.TicTacToe;
+
+import org.junit.Assert;
 import org.junit.Test;
 
-@Test
-	public void testConstructorForGrid()
-	{
-		Grid testGrid = new Grid();
-		
-		Node[] testNodes = testGrid.getNodes();
-		
+public class GridTest {
+
+	@Test
+	public void testConstructorForGrid() {
+		Grid testGrid = new Grid(9);
+
 	}
+
+}
