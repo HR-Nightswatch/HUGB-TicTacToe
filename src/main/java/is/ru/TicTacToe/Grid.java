@@ -1,4 +1,4 @@
-package is.ru.TIC-TAC-TOE;
+package is.ru.TicTacToe;
 
 public class Grid {
 	private Node[] nodes = new Node[9];
