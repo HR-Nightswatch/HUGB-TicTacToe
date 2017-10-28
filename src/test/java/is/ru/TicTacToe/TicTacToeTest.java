@@ -13,7 +13,7 @@ public class TicTacToeTest {
 
     /*@Test
 	public void testAskPlayerToPlayAnother()
-	{	
+	{
 		String answer = input.next();
 
 		Assert.assertEquals(TicTacToe.askPlayerToPlayAnother(), true);

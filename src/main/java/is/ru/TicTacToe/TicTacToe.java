@@ -9,6 +9,10 @@ public class TicTacToe {
     private Grid gameGrid;
     private Scanner input;
 
+    private Players player1;
+    private Players player2;
+    private int numberOfMovesUsed = 0;
+
     public TicTacToe() {
         gameGrid = new Grid();
         isStarted = true;
@@ -19,11 +23,16 @@ public class TicTacToe {
         System.out.println("Welcome to TicTacToe");
     }
 
-    public Players newPlayer(int playerNumber) {
+    public void newPlayer(int playerNumber) {
         System.out.print("Player " + playerNumber + ": ");
         String playerName = input.next();
 
-        return new Players(playerNumber, playerName);
+        if (playerNumber == 1) {
+            player1 = new Players(playerNumber, playerName);
+        }
+        else {
+            player2 = new Players(playerNumber, playerName);
+        }
     }
 
     public boolean askPlayerToPlayAnother() {
@@ -36,6 +45,28 @@ public class TicTacToe {
         return false;
     }
 
+    public void printPlayer(Players player1) {
+        System.out.println(player1.getName() + "(Player " + player1.getNumber() + ") place your: " + player1.getSymbol());
+    }
+
+    /* Return false if game has ended */
+    public boolean gameLoop() {
+        // Print grid
+        System.out.println(gameGrid.toString());
+
+        if (numberOfMovesUsed % 2 == 0) {
+            printPlayer(player1);
+        }
+        else {
+            printPlayer(player2);
+        }
+
+        String position = input.next();
+        numberOfMovesUsed++;
+
+        return true;
+    }
+
     public static void main( String[] args ) {
         TicTacToe game = new TicTacToe();
 
@@ -45,8 +76,13 @@ public class TicTacToe {
             game.welcome();
 
             System.out.println("Enter desired player names");
-            Players player1 = game.newPlayer(1);
-            Players player2 = game.newPlayer(2);
+            game.newPlayer(1);
+            game.newPlayer(2);
+
+            boolean gameOngoing = true;
+            while(gameOngoing) {
+                gameOngoing = game.gameLoop();
+            }
 
             isPlaying = game.askPlayerToPlayAnother();
         }
