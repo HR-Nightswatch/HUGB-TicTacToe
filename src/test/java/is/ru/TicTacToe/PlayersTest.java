@@ -11,25 +11,25 @@ public class PlayersTest {
 		assertEquals("Nonni", TestPlayer.getName());
 	}
 
-	/*@Test
+	@Test
 	public void testGetNumber()
 	{
-		Players TestPlayer = new Player(1, "Nonni");		
+		Players TestPlayer = new Players(1, "Nonni");		
 		assertEquals(1, TestPlayer.getNumber()); 
 	}
 	
-
+/*
 	@Test
 	public void testGetSymbolForPlayerOne()
 	{
-		Players TestPlayer = new Player(1, "Nonni");
+		Players TestPlayer = new Players(1, "Nonni");
 		assertEquals("O", TestPlayer.getSymbol());
 	}
 
     @Test
      	public void testGetSymbolForPlayerTwo()
         {
-            Player TestPlayer = new Player(2, "Kalli");
+            Players TestPlayer = new Players(2, "Kalli");
             assertEquals("X", TestPlayer.getSymbol());
         }*/
 
