@@ -36,12 +36,20 @@ public void testConstructorForGridNumber()
 	}
 
 	@Test	
-	public void testSetOwnerNonEmpty()
+	public void testGridPlayerIfNotEmpty()
 	{
 		Grid test = new Grid(1);
 		Players testPlayer = new Players(1, "Helga");
 		test.setPlayer(testPlayer);
-		assertEquals(testPlayer,  test.getPlayer());	
+		assertEquals(testPlayer, test.getPlayer());	
 	}
+
+	@Test	
+	public void testGridPlayerIfEmpty()
+	{
+		Grid test = new Grid(1);
+		assertEquals(null, test.getPlayer());	
+	}
+	
 
 }
