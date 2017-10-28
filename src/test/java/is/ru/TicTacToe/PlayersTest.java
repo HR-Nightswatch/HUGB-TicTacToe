@@ -24,12 +24,12 @@ public class PlayersTest {
 		Players TestPlayer = new Players(1, "Nonni");
 		assertEquals("O", TestPlayer.getSymbol());
 	}
-/*
+
     @Test
      	public void testGetSymbolForPlayerTwo()
         {
             Players TestPlayer = new Players(2, "Kalli");
             assertEquals("X", TestPlayer.getSymbol());
-        }*/
+        }
 
 }
