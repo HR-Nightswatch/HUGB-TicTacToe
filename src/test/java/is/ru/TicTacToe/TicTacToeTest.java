@@ -14,7 +14,7 @@ public class TicTacToeTest {
     @Test
     public void checkIfTicTacToeGameThatHasBeenStartedTest() {
         TicTacToe ttt = new TicTacToe();
-        ttt.CreateNewGame();
+        ttt.createNewGame();
         Assert.assertEquals(ttt.isStarted, true);
     }
 
