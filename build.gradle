@@ -9,6 +9,10 @@ sourceCompatibility = 1.8
 
 mainClassName = "is.ru.TicTacToe.TicTacToe"
 
+run{
+    standardInput = System.in
+}
+
 repositories {
     mavenCentral()
 }
