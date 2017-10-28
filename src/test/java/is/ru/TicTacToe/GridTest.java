@@ -67,6 +67,20 @@ public void testConstructorForGridNumber()
 		Grid test = new Grid(1);
 		assertEquals(null, test.getPlayer());	
 	}
-	
+
+	@Test
+	public void testToStringWithPlayer() {
+		Grid grid = new Grid();
+
+		Players player = new Players(1, "John Snow");
+
+		grid.getGrid()[1].setPlayer(player);
+
+		String correct = " 1 | O | 3 |\n" +
+				" 4 | 5 | 6 |\n" +
+				" 7 | 8 | 9 |\n";
+		assertEquals(correct, grid.toString());
+
+	}
 
 }

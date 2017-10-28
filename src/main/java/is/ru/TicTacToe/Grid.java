@@ -45,4 +45,23 @@ public class Grid {
 	{
 		return player == null;
 	}
+
+	public String toString() {
+		String grid = "";
+		for(int i = 0; i < 3; i++) {
+			for(int k = 0; k < 3; k++) {
+				Players player = grids[i * 3 + k].getPlayer();
+				grid += " ";
+				if (player == null) {
+					grid += grids[i * 3 + k].getNumber();
+				}
+				else {
+					grid += grids[i * 3 + k].getPlayer().getSymbol();
+				}
+				grid += " |";
+			}
+			grid += "\n";
+		}
+		return grid;
+	}
 }
