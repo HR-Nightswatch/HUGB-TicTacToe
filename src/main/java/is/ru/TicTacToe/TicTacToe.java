@@ -6,7 +6,7 @@ public class TicTacToe {
 
     private Grid gameGrid;
 
-    public void createNewGame() {
+    public TicTacToe() {
         gameGrid = new Grid();
         isStarted = true;
     }
@@ -14,7 +14,6 @@ public class TicTacToe {
     public static void main( String[] args ) {
         System.out.println( "Welcome to TicTacToe" );
         TicTacToe game = new TicTacToe();
-        game.createNewGame();
 
         System.exit( 0 ); //success
     }
