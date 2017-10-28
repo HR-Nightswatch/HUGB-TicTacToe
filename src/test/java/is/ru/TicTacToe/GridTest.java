@@ -29,6 +29,23 @@ public void testConstructorForGridNumber()
 	}
 
 	@Test
+	public void testIfEmpty()
+	{
+		Grid test = new Grid(1);
+		assertEquals(true, test.isEmpty());
+	}
+
+	@Test
+	public void testIfNotEmpty()
+	{
+		Grid test = new Grid(1);
+		Players testPlayer = new Players(1, "Helga");
+                test.setPlayer(testPlayer);
+                assertEquals(false, test.isEmpty());
+	}
+
+
+	@Test
 	public void testGridNumber()
 	{
 		Grid testNum = new Grid(2);
