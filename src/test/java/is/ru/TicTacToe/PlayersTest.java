@@ -18,14 +18,13 @@ public class PlayersTest {
 		assertEquals(1, TestPlayer.getNumber()); 
 	}
 	
-/*
 	@Test
 	public void testGetSymbolForPlayerOne()
 	{
 		Players TestPlayer = new Players(1, "Nonni");
 		assertEquals("O", TestPlayer.getSymbol());
 	}
-
+/*
     @Test
      	public void testGetSymbolForPlayerTwo()
         {
