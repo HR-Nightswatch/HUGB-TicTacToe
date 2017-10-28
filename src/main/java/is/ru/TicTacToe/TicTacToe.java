@@ -49,6 +49,15 @@ public class TicTacToe {
         System.out.println(player1.getName() + "(Player " + player1.getNumber() + ") place your: " + player1.getSymbol());
     }
 
+    public int askUserForValidPosition() {
+        while(true) {
+            int answer = Integer.parseInt(input.next());
+            if(answer > 0 && answer < 10 && gameGrid.getGrid()[answer - 1].getPlayer() == null) {
+                return answer;
+            }
+        }
+    }
+
     /* Return false if game has ended */
     public boolean gameLoop() {
         // Print grid
@@ -61,7 +70,15 @@ public class TicTacToe {
             printPlayer(player2);
         }
 
-        String position = input.next();
+        int position = askUserForValidPosition();
+
+        if (numberOfMovesUsed % 2 == 0) {
+            gameGrid.getGrid()[position - 1].setPlayer(player1);
+        }
+        else {
+            gameGrid.getGrid()[position - 1].setPlayer(player2);
+        }
+
         numberOfMovesUsed++;
 
         return true;
