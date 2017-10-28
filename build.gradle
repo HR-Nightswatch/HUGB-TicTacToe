@@ -3,8 +3,11 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: 'jacoco'
+apply plugin: 'application'
 
 sourceCompatibility = 1.8
+
+mainClassName = "is.ru.TicTacToe.TicTacToe"
 
 repositories {
     mavenCentral()
