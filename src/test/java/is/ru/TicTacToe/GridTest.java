@@ -35,4 +35,13 @@ public void testConstructorForGridNumber()
 		assertEquals(2, testNum.getNumber());
 	}
 
+	@Test	
+	public void testSetOwnerNonEmpty()
+	{
+		Grid test = new Grid(1);
+		Players testPlayer = new Players(1, "Helga");
+		test.setPlayer(testPlayer);
+		assertEquals(testPlayer,  test.getPlayer());	
+	}
+
 }
