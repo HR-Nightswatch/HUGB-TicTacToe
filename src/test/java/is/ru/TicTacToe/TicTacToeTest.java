@@ -11,4 +11,13 @@ public class TicTacToeTest {
         Assert.assertEquals(ttt.isStarted, true);
     }
 
+    /*@Test
+	public void testAskPlayerToPlayAnother()
+	{	
+		String answer = input.next();
+
+		Assert.assertEquals(TicTacToe.askPlayerToPlayAnother(), true);
+	
+	}*/
+
 }

@@ -28,4 +28,11 @@ public void testConstructorForGridNumber()
 	
 	}
 
+	@Test
+	public void testGridNumber()
+	{
+		Grid testNum = new Grid(2);
+		assertEquals(2, testNum.getNumber());
+	}
+
 }
