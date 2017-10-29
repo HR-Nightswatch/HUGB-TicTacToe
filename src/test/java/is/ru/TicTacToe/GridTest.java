@@ -83,4 +83,116 @@ public void testConstructorForGridNumber()
 
 	}
 
+	@Test
+	public void testIsWinnerNr1() {
+		Grid grid = new Grid();
+
+		Players player = new Players(1, "Channing Tatum");
+
+		grid.getGrid()[0].setPlayer(player);
+		grid.getGrid()[3].setPlayer(player);
+		grid.getGrid()[6].setPlayer(player);
+
+		assertEquals(true, grid.isWinner());
+
+	}
+
+	@Test
+	public void testIsWinnerNr2() {
+		Grid grid = new Grid();
+
+		Players player = new Players(1, "Channing Tatum");
+
+		grid.getGrid()[1].setPlayer(player);
+		grid.getGrid()[4].setPlayer(player);
+		grid.getGrid()[7].setPlayer(player);
+
+		assertEquals(true, grid.isWinner());
+
+	}
+
+	@Test
+	public void testIsWinnerNr3() {
+		Grid grid = new Grid();
+
+		Players player = new Players(1, "Channing Tatum");
+
+		grid.getGrid()[2].setPlayer(player);
+		grid.getGrid()[5].setPlayer(player);
+		grid.getGrid()[8].setPlayer(player);
+
+		assertEquals(true, grid.isWinner());
+
+	}
+
+	@Test
+	public void testIsWinnerNr4() {
+		Grid grid = new Grid();
+
+		Players player = new Players(1, "Channing Tatum");
+
+		grid.getGrid()[0].setPlayer(player);
+		grid.getGrid()[1].setPlayer(player);
+		grid.getGrid()[2].setPlayer(player);
+
+		assertEquals(true, grid.isWinner());
+
+	}
+
+	@Test
+	public void testIsWinnerNr5() {
+		Grid grid = new Grid();
+
+		Players player = new Players(1, "Channing Tatum");
+
+		grid.getGrid()[3].setPlayer(player);
+		grid.getGrid()[4].setPlayer(player);
+		grid.getGrid()[5].setPlayer(player);
+
+		assertEquals(true, grid.isWinner());
+
+	}
+
+	@Test
+	public void testIsWinnerNr6() {
+		Grid grid = new Grid();
+
+		Players player = new Players(1, "Channing Tatum");
+
+		grid.getGrid()[6].setPlayer(player);
+		grid.getGrid()[7].setPlayer(player);
+		grid.getGrid()[8].setPlayer(player);
+
+		assertEquals(true, grid.isWinner());
+
+	}
+
+	@Test
+	public void testIsWinnerNr7() {
+		Grid grid = new Grid();
+
+		Players player = new Players(1, "Channing Tatum");
+
+		grid.getGrid()[0].setPlayer(player);
+		grid.getGrid()[4].setPlayer(player);
+		grid.getGrid()[8].setPlayer(player);
+
+		assertEquals(true, grid.isWinner());
+
+	}
+
+	@Test
+	public void testIsWinnerNr8() {
+		Grid grid = new Grid();
+
+		Players player = new Players(1, "Channing Tatum");
+
+		grid.getGrid()[2].setPlayer(player);
+		grid.getGrid()[4].setPlayer(player);
+		grid.getGrid()[6].setPlayer(player);
+
+		assertEquals(true, grid.isWinner());
+
+	}
+
 }
