@@ -195,4 +195,30 @@ public void testConstructorForGridNumber()
 
 	}
 
+	@Test
+	public void testIsWinnerNoWinner() {
+		Grid grid = new Grid();
+
+		Players player1 = new Players(1, "Channing Tatum");
+		Players player2 = new Players(2, "Brad Pitt");
+
+		grid.getGrid()[0].setPlayer(player1);
+		grid.getGrid()[1].setPlayer(player2);
+		grid.getGrid()[2].setPlayer(player1);
+		grid.getGrid()[3].setPlayer(player1);
+		grid.getGrid()[4].setPlayer(player2);
+		grid.getGrid()[5].setPlayer(player2);
+		grid.getGrid()[6].setPlayer(player2);
+		grid.getGrid()[7].setPlayer(player1);
+		grid.getGrid()[8].setPlayer(player1);
+
+		/*	1+ 2- 3+
+			4+ 5- 6-
+			7- 8+ 9+ */
+
+		assertEquals(false, grid.isWinner());
+
+	}
+
+
 }
