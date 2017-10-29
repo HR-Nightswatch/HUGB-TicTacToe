@@ -12,10 +12,6 @@
 		* First right-click where you want the repository installed and select git bash
 		* Then run the following command in git bash: git clone https://github.com/HR-Nightswatch/HUGB-TicTacToe.git
 
-## Running the console aplication and Build scripts(build & deploy) ##
+## Running the console aplication ##
 
-* To run the application, run the following command in the command prompt: ./bin/run
-
-* To create a runnable jar file run the following command in the root of the repository using the command prompt:
-	* First: ./bin/build 
-	* And then: ./bin/deploy
+* To run the application, run the following command in the command prompt: ./gradlew run
