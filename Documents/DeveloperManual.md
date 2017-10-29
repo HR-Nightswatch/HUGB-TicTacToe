@@ -26,15 +26,3 @@ Manual For a simple console app that allows 2 players to compete in the game Tic
 	* To see travis and codecoverage results:
 		* Got to: [The teams Travis page](https://travis-ci.org/HR-Nightswatch/HUGB-TicTacToe)
 		* Got to: [The teams CodeCoverage page](https://codecov.io/gh/HR-Nightswatch/HUGB-TicTacToe)
-
-
-### List of the Bin scripts we created ###
-
-* bin/build - Builds and tests the project
-* bin/clean - Cleans the project
-* bin/compile - Compiles the project
-* bin/deploy - Runs clean and package
-* bin/package - Creates a runnable .jar file 
-* bin/run - Runs the project
-* bin/test - Tests the project
-
