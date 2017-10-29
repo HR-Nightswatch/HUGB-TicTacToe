@@ -13,7 +13,7 @@
 * Helga Hilmarsdóttir
 
 ## Leiðarvísar ##
-* [Developers manual](Documents/DeveloperManual.md)
-* [Administration manual](Documents/AdminManual.md) 
-* [Design report](Documents/DesignReport.md)
+* [Developers manual](Docs/DeveloperManual.md)
+* [Administration manual](Docs/AdminManual.md) 
+* [Design report](Docs/DesignReport.md)
 

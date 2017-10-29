@@ -5,13 +5,13 @@ Manual For a simple console app that allows 2 players to compete in the game Tic
 ## Sofware needed ##
 
 * Java JRE 1.8 
-	* To view your current version of java, run the following command in your command promt: java -version
+	* To view your current version of java, run the following command in your shell/terminal: java -version
 * Java JDK 1.8
-	* To install java, run the following command in the command prompt: sudo apt-get install openjdk-7-jdk	
+	* To install java, run the following command in your shell/terminal: sudo apt-get install openjdk-7-jdk	
 * Git
-	* To install Git, run the following command in the command prompt: apt-get-install git
+	* To install Git, run the following command in your shell/terminal: apt-get-install git
 * Gradle
-	* To install Gradle, run the following command in the command prompt: 
+	* To install Gradle, run the following command in your shell/terminal: sdk install gradle 4.2.1
 * Travis
 	* To create an account go to: [Travis-CI](https://travis-ci.org)
 * CodeCoverage
