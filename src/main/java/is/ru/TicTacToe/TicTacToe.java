@@ -14,9 +14,13 @@ public class TicTacToe {
     private int numberOfMovesUsed = 0;
 
     public TicTacToe() {
+        input = new Scanner(System.in);
+    }
+
+    public void resetGame() {
         gameGrid = new Grid();
         isStarted = true;
-        input = new Scanner(System.in);
+        numberOfMovesUsed = 0;
     }
 
     public void welcome() {
@@ -96,16 +100,14 @@ public class TicTacToe {
 
     }
 
-
-
     public static void main( String[] args ) {
         TicTacToe game = new TicTacToe();
-        Grid grids = new Grid();
 
         boolean isPlaying = true;
 
         while(isPlaying) {
             game.welcome();
+            game.resetGame();
 
             System.out.println("Enter desired player names");
             game.newPlayer(1);
