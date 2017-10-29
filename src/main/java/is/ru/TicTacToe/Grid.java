@@ -46,6 +46,29 @@ public class Grid {
 		return player == null;
 	}
 
+	public boolean isWinner()
+	{
+		if(grids[0].getPlayer() != null && grids[0].getPlayer() ==  grids[3].getPlayer() && grids[3].getPlayer() ==  grids[6].getPlayer()){
+			return true;
+		}else if(grids[1].getPlayer() != null && grids[1].getPlayer() ==  grids[4].getPlayer() && grids[4].getPlayer() ==  grids[7].getPlayer()){
+                        return true;
+		}else if(grids[2].getPlayer() != null && grids[2].getPlayer() ==  grids[5].getPlayer() && grids[5].getPlayer() ==  grids[8].getPlayer()){
+                        return true;
+        }else if(grids[0].getPlayer() != null && grids[0].getPlayer() ==  grids[1].getPlayer() && grids[1].getPlayer() ==  grids[2].getPlayer()){
+                        return true;
+		}else if(grids[3].getPlayer() != null && grids[3].getPlayer() ==  grids[4].getPlayer() && grids[4].getPlayer() ==  grids[5].getPlayer()){
+                        return true;
+		}else if(grids[6].getPlayer() != null && grids[6].getPlayer() ==  grids[7].getPlayer() && grids[7].getPlayer() ==  grids[8].getPlayer()){
+                        return true;
+		}else if(grids[0].getPlayer() != null && grids[0].getPlayer() ==  grids[4].getPlayer() && grids[4].getPlayer() ==  grids[8].getPlayer()){
+                        return true;
+		}else if(grids[2].getPlayer() != null && grids[2].getPlayer() ==  grids[4].getPlayer() && grids[4].getPlayer() ==  grids[6].getPlayer()){
+                        return true;
+		}else{
+			return false;
+		}
+	}
+
 	public String toString() {
 		String grid = "";
 		for(int i = 0; i < 3; i++) {
