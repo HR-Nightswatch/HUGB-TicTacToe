@@ -62,6 +62,7 @@ public class TicTacToe {
     public boolean gameLoop() {
         // Print grid
         System.out.println(gameGrid.toString());
+        Grid grids = new Grid();
 
         if (numberOfMovesUsed % 2 == 0) {
             printPlayer(player1);
@@ -81,11 +82,20 @@ public class TicTacToe {
 
         numberOfMovesUsed++;
 
+        if(!grids.isWinner()) {
+            System.out.println("You are a winner! ");
+            return false;
+        }
+
         return true;
+
     }
+
+
 
     public static void main( String[] args ) {
         TicTacToe game = new TicTacToe();
+        Grid grids = new Grid();
 
         boolean isPlaying = true;
 
@@ -103,6 +113,7 @@ public class TicTacToe {
 
             isPlaying = game.askPlayerToPlayAnother();
         }
+
         System.out.println("Thank you for playing! :)");
 
         System.exit( 0 ); //success
