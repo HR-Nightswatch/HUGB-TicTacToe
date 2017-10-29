@@ -42,4 +42,4 @@ Tic Tac Toe is a game where two players compete to be the first to get three in 
 * askPlayerToPlayAnother()
 * printPlayer(Players player1)
 * askUserForValidPosition()
-* gameLoop()
+* gameLoop() 
